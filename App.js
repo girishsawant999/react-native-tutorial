@@ -1,11 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import Constants from "expo-constants";
+import { StatusBar } from "expo-status-bar";
+import React from "react";
+import { StyleSheet, View, ScrollView } from "react-native";
+import TopHeader from "./Components/TopHeader";
+import SecondHeader from "./Components/SecondHeader";
+import OffersSlider from "./Components/OffersSlider";
+import HomePage from "./Components/HomePage";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <TopHeader />
+      <SecondHeader />
+      <View style={{ flex: 1 }}>
+        <ScrollView>
+          <OffersSlider />
+          <HomePage />
+          <HomePage />
+          <HomePage />
+          <HomePage />
+        </ScrollView>
+      </View>
+
       <StatusBar style="auto" />
     </View>
   );
@@ -14,8 +30,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    marginTop: Platform.OS === "ios" ? 0 : Constants.statusBarHeight,
   },
 });
