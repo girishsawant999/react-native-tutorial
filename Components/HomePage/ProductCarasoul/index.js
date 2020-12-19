@@ -80,6 +80,8 @@ const styles = StyleSheet.create({
     paddingVertical: 30,
     position: "relative",
     width: Dimensions.get("window").width - 100,
+    display: "flex",
+    alignItems: "center",
   },
   wishlistIcon: {
     position: "absolute",
@@ -100,9 +102,8 @@ const styles = StyleSheet.create({
     width: 30,
   },
   tinyLogo: {
-    height: Dimensions.get("window").width - 140,
-    width: Dimensions.get("window").width - 140,
-    marginRight: 10,
+    height: Dimensions.get("window").width - 160,
+    width: Dimensions.get("window").width - 160,
     resizeMode: "stretch",
   },
   slideText: {
