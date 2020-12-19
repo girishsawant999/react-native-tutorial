@@ -32,7 +32,7 @@ export default function TopHeader() {
             {item.title}
           </Text>
           <Text style={[styles.desc, { color: item.desccolor }]}>
-            {item.content}
+            {item.content.replace("<br>", "\n")}
           </Text>
           <TouchableOpacity
             onPress={() => console.log("clicked")}

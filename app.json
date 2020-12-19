@@ -21,10 +21,12 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/logo-main.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "girish.exp.reactnativetutorial"
     },
     "web": {
       "favicon": "./assets/logo-main.png"
-    }
+    },
+    "description": ""
   }
 }

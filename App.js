@@ -16,9 +16,6 @@ export default function App() {
         <ScrollView>
           <OffersSlider />
           <HomePage />
-          <HomePage />
-          <HomePage />
-          <HomePage />
         </ScrollView>
       </View>
 
