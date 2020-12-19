@@ -46,7 +46,6 @@ const OFFERS_DATA = {
 
 export default function TopHeader() {
   const _renderItem = ({ item, index }) => {
-    console.log(item);
     return (
       <View style={styles.slide}>
         <View style={styles.slideImg}>

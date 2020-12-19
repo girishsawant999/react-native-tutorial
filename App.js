@@ -1,6 +1,6 @@
 import Constants from "expo-constants";
 import { StatusBar } from "expo-status-bar";
-import React from "react";
+import React, { useEffect } from "react";
 import { StyleSheet, View, ScrollView } from "react-native";
 import TopHeader from "./Components/TopHeader";
 import SecondHeader from "./Components/SecondHeader";

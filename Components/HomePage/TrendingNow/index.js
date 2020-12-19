@@ -28,7 +28,7 @@ export default function App() {
                 onPress={() => console.log("clicked")}
                 style={styles.bannerButton}
               >
-                <Text style={styles.offerDesc}>
+                <Text style={styles.buttonText}>
                   {item.btntext}
                   &nbsp;
                   <Fontisto name="angle-right" size={15} />
@@ -73,10 +73,13 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   bannerButton: {
-    paddingHorizontal: 15,
-    paddingVertical: 10,
+    paddingHorizontal: 20,
+    paddingVertical: 15,
     marginTop: 10,
     borderRadius: 4,
     backgroundColor: "#fff",
+  },
+  buttonText: {
+    fontSize: 15,
   },
 });

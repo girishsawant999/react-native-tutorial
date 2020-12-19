@@ -12,11 +12,9 @@ import { HomepageJson } from "../homepageJson";
 import { Fontisto } from "@expo/vector-icons";
 
 const { SECTION1 } = HomepageJson;
-console.log("SECTION1 :>> ", SECTION1);
 
 export default function TopHeader() {
   const _renderItem = ({ item, index }) => {
-    console.log(item);
     return (
       <View style={styles.slide}>
         <View style={styles.slideImg}>

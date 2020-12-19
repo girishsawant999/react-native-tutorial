@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 import HomePageBanner from "./HomepageBanner";
 import ExclusiveOffer from "./ExclusiveOffer";
 import TrendingNow from "./TrendingNow";
+import FeaturedSet from "./FeaturedSet";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <HomePageBanner />
       <ExclusiveOffer />
       <TrendingNow />
+      <FeaturedSet />
     </View>
   );
 }
